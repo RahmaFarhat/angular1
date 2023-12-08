@@ -1,0 +1,7 @@
+<div *ngFor="let p of tv">
+  <app-show-one-product
+    [product]="p"
+    (sendNotif)="afterrecivedata($event)"
+    (senddisliketo)="afterdislike($event)"
+  ></app-show-one-product>
+</div>
